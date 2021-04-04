@@ -25,15 +25,15 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Button Margin="20" Grid.Row="0" Grid.Column="0" Opacity="0.75"/>
-            <Button Margin="20" Grid.Row="0" Grid.Column="1" Opacity="0.75"/>
-            <Button Margin="20" Grid.Row="0" Grid.Column="2" Opacity="0.75"/>
-            <Button Margin="20" Grid.Row="1" Grid.Column="0" Opacity="0.75"/>
-            <Button Margin="20" Grid.Row="1" Grid.Column="1" Opacity="0.75"/>
-            <Button Margin="20" Grid.Row="1" Grid.Column="2" Opacity="0.75"/>
-            <Button Margin="20" Grid.Row="2" Grid.Column="0" Opacity="0.75"/>
-            <Button Margin="20" Grid.Row="2" Grid.Column="1" Opacity="0.75"/>
-            <Button Margin="20" Grid.Row="2" Grid.Column="2" Opacity="0.75"/>
+            <Button Name="Matrix1" Content="" Margin="20" Grid.Row="0" Grid.Column="0" Opacity="0.75" FontSize="64" Click="Button_Click_1"/>
+            <Button Name="Matrix2" Content="" Margin="20" Grid.Row="0" Grid.Column="1" Opacity="0.75" FontSize="64" Click="Button_Click_2"/>
+            <Button Name="Matrix3" Content="" Margin="20" Grid.Row="0" Grid.Column="2" Opacity="0.75" FontSize="64" Click="Button_Click_3"/>
+            <Button Name="Matrix4" Content="" Margin="20" Grid.Row="1" Grid.Column="0" Opacity="0.75" FontSize="64" Click="Button_Click_4"/>
+            <Button Name="Matrix5" Content="" Margin="20" Grid.Row="1" Grid.Column="1" Opacity="0.75" FontSize="64" Click="Button_Click_5"/>
+            <Button Name="Matrix6" Content="" Margin="20" Grid.Row="1" Grid.Column="2" Opacity="0.75" FontSize="64" Click="Button_Click_6"/>
+            <Button Name="Matrix7" Content="" Margin="20" Grid.Row="2" Grid.Column="0" Opacity="0.75" FontSize="64" Click="Button_Click_7"/>
+            <Button Name="Matrix8" Content="" Margin="20" Grid.Row="2" Grid.Column="1" Opacity="0.75" FontSize="64" Click="Button_Click_8"/>
+            <Button Name="Matrix9" Content="" Margin="20" Grid.Row="2" Grid.Column="2" Opacity="0.75" FontSize="64" Click="Button_Click_9"/>
         </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
@@ -71,8 +71,8 @@
             </Grid>
             <Label Content="Tura:" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Label Name="PoleTura" Content="0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
-            <Button Content="Historia" Grid.Row="3" Grid.ColumnSpan="2" Margin="15"/>
-            <Button Content="Nowa gra" Grid.Row="4" Grid.ColumnSpan="2" Margin="15"/>
+            <Button Content="Historia" Grid.Row="3" Grid.ColumnSpan="2" Margin="15" Click="Button_Click_Historia"/>
+            <Button Content="Nowa gra" Grid.Row="4" Grid.ColumnSpan="2" Margin="15" Click="Button_Click_Nowa_Gra"/>
             <Grid Grid.Row="5" Grid.ColumnSpan="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*" />
