@@ -42,19 +42,45 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Label Content="Wygranych: " HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Label Name="PoleWygranych" Content="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Label Content="Przegranych:" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Label Name="PolePrzegranych" Content="0" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Grid Grid.ColumnSpan="2" Grid.RowSpan="2" Background="Beige">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="4*" />
+                </Grid.RowDefinitions>
+                <Label Content="Wyniki" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalAlignment="Center" Background="SandyBrown"/>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Name="PoleGracz1" Content="Gracz" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Name="PoleGracz1Wynik" Content="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Name="PoleGracz2" Content="Komputer" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Name="PoleGracz2Wynik" Content="0" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </Grid>
             <Label Content="Tura:" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Label Name="PoleTura" Content="0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
             <Button Content="Historia" Grid.Row="3" Grid.ColumnSpan="2" Margin="15"/>
             <Button Content="Nowa gra" Grid.Row="4" Grid.ColumnSpan="2" Margin="15"/>
+            <Grid Grid.Row="5" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <RadioButton Name="PoleTrybJednoosobowy" Content="Tryb Jednoosobowy" IsChecked="True" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                <RadioButton Name="PoleTrybWieloosobowy" Content="Tryb Wieloosobowy" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
